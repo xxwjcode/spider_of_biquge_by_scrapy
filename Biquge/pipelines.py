@@ -57,7 +57,7 @@ class JsonItemPipeline(object):
 
 
 class XmlItemPipeline(object):
-    '''利用内置的JsonItemExporter类进行数据json类型保存'''
+    '''利用内置的JsonItemExporter类进行数据xml类型保存'''
     def __init__(self):
         self.file = open('book2.xml', 'wb')
         self.exporter = XmlItemExporter(file=self.file, encoding='utf-8')
